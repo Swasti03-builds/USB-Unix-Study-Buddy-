@@ -1,0 +1,20 @@
+Create a new directory called myfolder,mkdir myfolder
+List all files in the current directory,ls
+Show the present working directory,pwd
+Create an empty file named notes.txt,touch notes.txt
+Remove a file named old.txt,rm old.txt
+Remove a directory named tempdir,rmdir tempdir
+Copy file a.txt to b.txt,cp a.txt b.txt
+Move file file1.txt to /tmp directory,mv file1.txt /tmp
+Display the contents of file.txt,cat file.txt
+Display first 5 lines of data.log,head -5 data.log
+Display last 5 lines of data.log,tail -5 data.log
+Count the number of lines in info.txt,wc -l info.txt
+Change permissions to 755 for script.sh,chmod 755 script.sh
+Change ownership of file.txt to user harsh,chown harsh file.txt
+Search for the word error inside log.txt,grep error log.txt
+Show running processes,ps
+Show disk usage in human readable format,df -h
+Show currently logged in users,who
+Clear the terminal screen,clear
+View manual page for ls,man ls

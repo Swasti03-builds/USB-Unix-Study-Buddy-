@@ -1,0 +1,4 @@
+2025-11-16 12:43:31 | Change permission of file.sh to 755 | entered: dksn | FAILED
+2025-11-16 16:31:32 | Command: vi | Entered: grep | Correct: vi <file> | FAILED
+2025-11-16 16:43:10 | Command: man | Entered: man | Correct: man <command> | FAILED
+2025-11-16 16:43:24 | Command: chmod | Entered: chmod | Correct: chmod <mode> <file> | FAILED

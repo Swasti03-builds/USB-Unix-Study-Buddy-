@@ -1,0 +1,10 @@
+Which command is used to search for text in files?|grep|find|awk|sed|1
+Which command repeatedly prints a file as it grows?|tail -f|head|cat|watch|1
+Which command shows disk usage in human format?|du -h|df -h|ls -lh|size|1
+Which command changes file permissions?|chmod|chown|chgrp|umask|1
+Which command finds files by name?|find|locate|search|grep|1
+Which command shows running processes?|ps|top|jobs|pid|1
+Which command sorts text alphabetically?|sort|order|arr|set|1
+Which command replaces text patterns in files?|sed|awk|grep|cut|1
+Which command prints system hostname?|hostname|uname|-host|machine|1
+Which command shows memory usage?|free -h|du -h|df -h|top|1

@@ -1,0 +1,10 @@
+Which command shows kernel version?|uname -r|version|kernel|sysversion|1
+Which command kills a process by its PID?|kill|end|stop|terminate|1
+Which command monitors real-time performance?|top|htop|ps|monitor|1
+Which command displays network interface details?|ifconfig|ipconfig|netstat|interfaces|1
+Which command compresses files using gzip?|gzip|zip|tar|gz|1
+Which command extracts .tar.gz files?|tar -xzf|tar -czf|gzip -d|unzip|1
+Which command schedules a job with cron?|crontab|-cron|schedule|task|1
+Which command changes file ownership?|chown|chmod|chgrp|owner|1
+Which command lists open ports?|netstat -tulpn|ports|lsports|scan|1
+Which command checks connectivity to a server?|ping|connect|trace|curl|1

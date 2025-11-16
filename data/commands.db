@@ -1,0 +1,41 @@
+ls|List directory contents|ls [options] [path]|ls -la
+cd|Change directory|cd <path>|cd /home
+pwd|Print current directory|pwd|pwd
+mkdir|Create a directory|mkdir <name>|mkdir testdir
+rmdir|Remove an empty directory|rmdir <directory>|rmdir olddir
+rm|Remove files or directories|rm [options] <file>|rm notes.txt
+cp|Copy files|cp <src> <dest>|cp a.txt b.txt
+mv|Move or rename files|mv <src> <dest>|mv a.txt folder/
+touch|Create an empty file|touch <filename>|touch newfile.txt
+cat|View file contents|cat <file>|cat data.txt
+echo|Print text to terminal|echo <text>|echo Hello World
+man|Show manual page|man <command>|man ls
+grep|Search for text in files|grep "pattern" <file>|grep -i "root" /etc/passwd
+find|Search files in directories|find <path> -name <pattern>|find . -name "*.txt"
+chmod|Change file permissions|chmod <mode> <file>|chmod 755 script.sh
+chown|Change file ownership|chown <user>:<group> <file>|chown root:root test.txt
+df|Show disk space usage|df -h|df -h
+du|Show directory/file sizes|du -sh <path>|du -sh /var
+head|Show first lines of file|head <file>|head -n 10 data.txt
+tail|Show last lines of file|tail <file>|tail -f logfile.log
+wc|Count words/lines/bytes|wc [options] <file>|wc -l data.txt
+sort|Sort lines of text files|sort <file>|sort names.txt
+uniq|Remove duplicate lines|uniq <file>|uniq sorted.txt
+ps|Show running processes|ps aux|ps aux
+kill|Terminate a process|kill <pid>|kill 1234
+top|Monitor system resources|top|top
+htop|Better system monitor|htop|htop
+ssh|Connect to remote machine|ssh user@host|ssh root@192.168.1.1
+scp|Copy files over SSH|scp file user@host:/path|scp test.txt root@server:/root
+tar|Archive files|tar -cvf file.tar <dir>|tar -cvf backup.tar data/
+gzip|Compress files|gzip <file>|gzip backup.tar
+ping|Check network connectivity|ping <host>|ping google.com
+curl|Download files/URL data|curl <url>|curl https://example.com
+wget|Download files|wget <url>|wget https://example.com/file.txt
+nano|Open text editor|nano <file>|nano notes.txt
+vi|Open vi editor|vi <file>|vi data.txt
+history|Show command history|history|history
+clear|Clear terminal screen|clear|clear
+uname|Show system information|uname -a|uname -a
+date|Show current date and time|date|date
+

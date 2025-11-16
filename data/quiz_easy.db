@@ -1,0 +1,10 @@
+Which command lists files in Unix?|ls|rm|cat|touch|1
+Which command shows the present working directory?|pwd|echo|cd|dir|1
+Which command creates a new directory?|mkdir|rmdir|nano|cat|1
+Which command removes a file?|rm|mv|chmod|grep|1
+Which command shows contents of a file?|cat|rm|ls|mkdir|1
+Which command displays the calendar?|cal|date|time|clock|1
+Which command clears the terminal?|clear|reset|clean|delete|1
+Which command shows the current date and time?|date|time|cal|now|1
+Which command counts lines, words and characters?|wc|cat|ls|grep|1
+Which command shows currently logged-in users?|who|ls|pwd|id|1
