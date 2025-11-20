@@ -1,6 +1,4 @@
 start_quiz_gui() {
-
-    # Step 1: Ask quiz level
     level=$(zenity --list \
         --title="Choose Quiz Level" \
         --column="Levels" \
@@ -18,10 +16,8 @@ start_quiz_gui() {
     score=0
     total=0
 
-    # 🔀 Shuffle questions before starting
     mapfile -t QUESTIONS < <(shuf "$db")
 
-    # Ask only first 5 questions (or total available)
     for line in "${QUESTIONS[@]:0:5}"; do
         
         IFS='|' read -r question o1 o2 o3 o4 correct <<< "$line"
@@ -29,7 +25,6 @@ start_quiz_gui() {
         [ -z "$question" ] && continue
         total=$((total+1))
 
-        # ----- 🔀 SHUFFLE OPTIONS -----
         opts=( "$o1" "$o2" "$o3" "$o4" )
         shuffled_opts=( $(printf "%s\n" "${opts[@]}" | shuf) )
 
@@ -39,7 +34,6 @@ start_quiz_gui() {
             fi
         done
 
-        # GUI Question
         ans=$(zenity --list \
             --title="Question $total" \
             --width=650 --height=450 \
@@ -61,7 +55,6 @@ start_quiz_gui() {
             *) choice=0 ;;
         esac
 
-        # FEEDBACK
         if [ "$choice" -eq "$new_correct" ]; then
             score=$((score+1))
             zenity --info \
@@ -80,16 +73,12 @@ start_quiz_gui() {
 
     done
 
-
-    # ---------- SAVE SCORE TO scores.txt ----------
     mkdir -p data
     timestamp=$(date "+%Y-%m-%d %H:%M:%S")
     percentage=$((score * 100 / total))
 
     echo "$timestamp | Level: $level | Score: $score/$total | $percentage%" >> data/scores.txt
 
-
-    # ---------- FINAL SCORE POPUP ----------
     zenity --info \
         --title="Quiz Finished 🏁" \
         --text="Level: <b>$level</b>\nScore: <b>$score / $total</b>\nPercentage: <b>$percentage%</b>\n\n(Saved to scores.txt)"
